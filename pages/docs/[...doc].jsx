@@ -1,11 +1,10 @@
 import Head from 'next/head';
 import glob from 'glob';
 import parseMD from 'parse-md';
-import { existsSync, readFileSync } from 'node:fs';
-
 import MarkdownBlock from '../../components/MarkdownBlock';
 import TableOfContents from '../../components/TableOfContents';
 import PageList from '../../components/PageList';
+import { existsSync, readFileSync } from 'node:fs';
 
 import styles from '../../styles/Main.module.css';
 
@@ -26,19 +25,15 @@ export default function HavocDoc({nf, metadata, content, infos}) {
         <Head>
             <title>{`${metadata?.title || metadata?.filename || 'Untitled Document'} | Havoc Documentation`}</title>
         </Head>
-        <section className={styles.document}>
-            <PageList list={infos} />
-            <div className={styles.contentWrapper}>
-                <TableOfContents markdown={content} />
-                <div className={styles.content}>
-                    {metadata?.title ? <h1 className={styles.title}>{metadata.title}</h1> : <></>}
-                    {metadata?.description ? <p className={styles.subtitle}>{metadata.description}</p> : <></>}
-                    <section className={styles.markdown} id="markdown">
-                        <MarkdownBlock markdown={content} />
-                    </section>
-                </div>
-            </div>
-        </section>
+        <PageList list={infos} />
+        <div className={styles.content}>
+            {metadata?.title ? <h1 className={styles.title}>{metadata.title}</h1> : <></>}
+            {metadata?.description ? <p className={styles.subtitle}>{metadata.description}</p> : <></>}
+            <section className={styles.markdown} id="markdown">
+                <MarkdownBlock markdown={content} />
+            </section>
+        </div>
+        <TableOfContents markdown={content} />
     </>
 }
 

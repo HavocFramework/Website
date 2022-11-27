@@ -37,10 +37,10 @@ header.navbar div.links a.link {
     padding: 0.5rem 1rem;
     background: #00000065;
     backdrop-filter: blur(0.5rem);
+    text-decoration: none;
     border-radius: 5px;
     transition: background .25s;
     user-select: none;
-    text-decoration: none;
 }
 header.navbar div.links a.link:hover {
     background: #00000095;

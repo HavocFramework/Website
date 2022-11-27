@@ -74,6 +74,7 @@ code.default {
     padding: 0.15rem 0.25rem;
     color: var(--dracula-foreground);
     background: var(--dracula-current-line);
+    font-size: 85%;
     white-space: break-spaces;
     border-radius: 5px;
 }

@@ -7,7 +7,7 @@ export default function HavocFooter({className}) {
             Havoc by <a href="https://5pider.net">C5pider</a>
         </div>
         <div className={styles.right}>
-            made with 🍵 by <a href="https://pandaaa.dev">Pandaaa</a>
+            made with 🍵 by <a href="https://pandaaa.dev" target="_blank">Pandaaa</a>
         </div>
     </footer>;
 }

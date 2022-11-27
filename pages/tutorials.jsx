@@ -14,6 +14,8 @@ export default function HavocTutorials() {
             <h1 className={styles.title}>Tutorials</h1>
             {consent ? <>
                 <iframe
+                    width="720"
+                    height="400"
                     src="https://www.youtube.com/embed/a8ghTH_fT_o"
                     frameBorder="0"
                     allow="autoplay; encrypted-media"
