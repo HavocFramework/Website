@@ -1,0 +1,87 @@
+header.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    height: 64px;
+    background-color: #44475abc;
+    margin: 1rem;
+    backdrop-filter: blur(0.5rem);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    z-index: 50;
+}
+header.navbar a.brand {
+    display: flex;
+    vertical-align: middle;
+    text-decoration: none;
+}
+header.navbar a.brand svg.logo {
+    margin: auto;
+}
+header.navbar a.brand h1.name {
+    margin: auto;
+    line-height: 100%;
+}
+header.navbar div.links {
+    flex-direction: row;
+    margin-left: auto;
+}
+header.navbar div.links,
+header.navbar div.links.show {
+    display: flex;
+}
+header.navbar div.links a.link {
+    margin: auto 0.25rem;
+    padding: 0.5rem 1rem;
+    background: #00000065;
+    backdrop-filter: blur(0.5rem);
+    border-radius: 5px;
+    transition: background .25s;
+    user-select: none;
+    text-decoration: none;
+}
+header.navbar div.links a.link:hover {
+    background: #00000095;
+}
+header.navbar div.linkBtn {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0.5rem;
+    bottom: 0;
+    user-select: all;
+}
+header.navbar div.linkBtn svg {
+    margin: auto;
+    cursor: pointer;
+    padding: 0.33rem;
+    transition: background .25s;
+    border-radius: 0.5rem;
+}
+header.navbar div.linkBtn svg:hover {
+    background: #00000065;
+    backdrop-filter: blur(0.5rem);
+}
+
+@media screen and (max-width: 888px) {
+    header.navbar div.links {
+        position: relative;
+        top: 64px;
+        right: -0.5rem;
+        display: none;
+        padding: 0.33rem;
+        height: fit-content;
+        flex-direction: column;
+        background-color: #44475abc;
+        backdrop-filter: blur(0.5rem);
+        border-radius: 0.5rem;
+    }
+    header.navbar div.links a.link {
+        margin: 0.25rem;
+    }
+    header.navbar div.linkBtn {
+        display: flex;
+    }
+}

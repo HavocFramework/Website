@@ -1,0 +1,79 @@
+:root {
+    --dracula-background: #282a36;
+    --dracula-current-line: #44475a;
+    --dracula-foreground: #f8f8f2;
+    --dracula-comment: #6272a4;
+    --dracula-cyan: #8be9fd;
+    --dracula-green: #50fa7b;
+    --dracula-orange: #ffb86c;
+    --dracula-pink: #ff79c6;
+    --dracula-purple: #bd93f9;
+    --dracula-red: #ff5555;
+    --dracula-yellow: #f1fa8c;
+    --navbar-heigth: 64px;
+}
+
+@font-face {
+    font-family: Jost;
+    src: url('/fonts/Jost.woff') format('woff'), url('/fonts/Jost.woff2') format('woff2'), url('/fonts/Jost.ttf') format('ttf');
+}
+
+::-webkit-scrollbar {
+    background: #282a3600;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--dracula-current-line);
+    border-radius: 5px;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    color: var(--dracula-foreground);
+    font-family: Jost, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    background: var(--dracula-background);
+}
+
+main {
+    display: flex;
+    flex: 1;
+    margin-top: calc(64px + 2 * 1rem);
+    padding: 0 1rem;
+}
+
+iframe {
+    aspect-ratio: 16 / 8;
+    width: 720px;
+    max-width: 90vw;
+}
+
+div#__next {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+a[href] {
+    text-decoration: underline;
+}
+
+code.default {
+    padding: 0.15rem 0.25rem;
+    color: var(--dracula-foreground);
+    background: var(--dracula-current-line);
+    white-space: break-spaces;
+    border-radius: 5px;
+}

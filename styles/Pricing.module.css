@@ -1,0 +1,71 @@
+section.plans {
+    display: flex;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+section.plans div.plan {
+    display: flex;
+    flex-direction: column;
+    background: #44475a;
+    border-radius: 0.5rem;
+    width: 275px;
+}
+section.plans div.plan div.title {
+    padding: 32px 52px;
+    background: #00000035;
+    text-align: center;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+section.plans div.plan div.title p.name {
+    margin: 0;
+    font-size: 1.1rem;
+}
+section.plans div.plan div.title h1.price {
+    margin: 0.33rem 0 1rem;
+    font-size: 2.5rem;
+}
+section.plans div.plan div.title h1.price small {
+    margin-left: 0.25rem;
+    color: var(--dracula-comment);
+    font-size: 1rem;
+}
+section.plans div.plan div.title a.download {
+    margin: auto 0.25rem;
+    padding: 0.5rem 1rem;
+    background: #44475a;
+    border-radius: 5px;
+    transition: background .25s;
+}
+section.plans div.plan div.title a.download:hover {
+    background: #2e303d;
+}
+
+section.plans div.plan ul.features {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0.25rem 0;
+    list-style: none;
+}
+section.plans div.plan ul.features li.feature {
+    display: flex;
+    padding: 1rem 1.5rem;
+}
+section.plans div.plan ul.features li.feature svg {
+    margin: auto 0.5rem auto 0;
+    width: 20px;
+    color: var(--dracula-green);
+}
+section.plans div.plan ul.features li.feature i {
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 925px) {
+    section.plans {
+        flex-direction: column;
+    }
+}

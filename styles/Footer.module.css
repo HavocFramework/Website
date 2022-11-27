@@ -1,0 +1,18 @@
+footer.footer {
+    display: flex;
+    margin-top: auto;
+    padding: 1.5rem;
+    border-top: 3px solid var(--dracula-comment);
+}
+footer div.left {
+    margin-right: auto;
+}
+footer div.left a {
+    color: #bd93f9;
+}
+footer div.right {
+    margin-left: auto;
+}
+footer div.right a {
+    color: #bad80a;
+}
