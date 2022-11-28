@@ -70,6 +70,12 @@ a[href] {
     text-decoration: underline;
 }
 
+table, th, td {
+    border: 1px solid var(--dracula-current-line);
+    border-collapse: collapse;
+    padding: 6px;
+}
+
 code.default {
     padding: 0.15rem 0.25rem;
     color: var(--dracula-foreground);
