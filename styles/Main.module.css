@@ -54,6 +54,10 @@ section.markdown img {
     max-width: 50%;
 }
 
+section.markdown img[HavocLogo] {
+    max-width: 100%;
+}
+
 section.contentList h2.title,
 section.pageList h2.title {
     margin: 0;
