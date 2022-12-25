@@ -11,7 +11,7 @@ export default function HavocProducts() {
         </Head>
         <div className={styles.center}>
             <h1 className={styles.title}>Products</h1>
-            <p className={styles.subtitle}>comming soon</p>
+            <p className={styles.subtitle}>coming soon</p>
         </div>
     </>
 

@@ -38,18 +38,41 @@ img.previewImage {
 section.markdown {
     margin: 1rem 0;
 }
+
 section.markdown p {
     margin: 0;
     line-height: 2rem;
 }
+
 section.markdown blockquote {
     margin-left: 0.5rem;
     padding: 0.2rem 0.75rem;
     border-left: 0.3rem solid var(--dracula-comment);
 }
+
 section.markdown blockquote p {
     color: #8b949e;
 }
+
+section.markdown h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+section.markdown h3 {
+    margin-bottom: 4px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+section.markdown pre {
+    margin: 0;
+}
+
+section.markdown table {
+    margin: 10px;
+}
+
 section.markdown img {
     max-width: 50%;
 }
