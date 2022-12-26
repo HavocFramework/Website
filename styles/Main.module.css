@@ -47,7 +47,9 @@ section.markdown p {
 section.markdown blockquote {
     margin-left: 0.5rem;
     padding: 0.2rem 0.75rem;
-    border-left: 0.3rem solid var(--dracula-comment);
+    border: 0.01em solid #8b949e69;
+    border-radius: 4px;
+    border-left: 0.5rem solid var(--dracula-comment);
 }
 
 section.markdown blockquote p {
