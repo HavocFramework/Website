@@ -18,16 +18,13 @@ export default function HavocHeader() {
 
         <div className={styles.links + (showMenu ? ` ${styles.show}` : '')}>
             <Link href="/download">
-                <a className={styles.link}>Download</a>
-            </Link>
-            <Link href="/products">
-                <a className={styles.link}>Products</a>
-            </Link>
-            <Link href="/tutorials">
-                <a className={styles.link}>Tutorials</a>
+                <a className={styles.link}>Github</a>
             </Link>
             <Link href="/docs">
                 <a className={styles.link}>Documentation</a>
+            </Link>
+            <Link href="/tutorials">
+                <a className={styles.link}>Tutorials</a>
             </Link>
             <Link href="/contact">
                 <a className={styles.link}>Contact</a>

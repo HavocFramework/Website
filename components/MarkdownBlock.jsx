@@ -2,6 +2,7 @@ import { createElement } from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import rehypeRaw from "rehype-raw";
 import codeTheme from 'react-syntax-highlighter/dist/cjs/styles/prism/atom-dark';
 import calculateHash from '../scripts/calculateHash';
   
@@ -22,6 +23,7 @@ export default function CodeBlock({markdown}) {
         children={markdown}
         skipHtml
         remarkPlugins={[remarkGfm]}
+        rehypePlugins={[rehypeRaw]}
         components={{
             code({node, inline, className, children, ...props}) {
                 const code = String(children);
